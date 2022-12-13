@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+    <channel>
+        <title>MlnBanka</title>
+        <link>https://probrad.000webhostapp.com</link>
+        <description>Rss za MlnBanku</description>
+        <item>
+            <title>Mogućnosti naše banke</title>
+            <link>https://probrad.000webhostapp.com/features.html</link>
+            <description>Lako otvaranje računa od kuće.</description>
+        </item>
+    </channel>
+
+</rss>

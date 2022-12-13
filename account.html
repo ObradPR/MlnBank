@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="rs">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vaš Mln bankovni račun." />
+    <meta
+      name="keywords"
+      content="Bankovne operacije, bankovni račun, moj račun, slanje novc, dizanje kredita, zatvaranje računa, pregled transakcija, informacije o računu"
+    />
+    <meta name="author" content="Obrad Pualić-Radujko" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <!-- Title -->
+    <title>Mln Vaša Banka</title>
+    <!-- Web Icons -->
+    <script
+      src="https://kit.fontawesome.com/ad3346f46f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/png" />
+  </head>
+  <body>
+    <div id="home">
+      <a href="index.html"><h1>Početna</h1></a>
+    </div>
+    <main class="main_account">
+      <div id="register_form">
+        <h2>Napravite račun</h2>
+        <div class="form_container">
+          <form
+            action="#"
+            method="post"
+            name="reg_form__name"
+            id="reg_form__id"
+          >
+            <!-- Dinamičko prikazivanje iz JS -->
+            <div class="form_row reg_input__container"></div>
+            <div class="form_row reg_input__container"></div>
+            <div class="form_row reg_input__container"></div>
+            <div class="form_row reg_rb__container">
+              <h3>Pol:</h3>
+            </div>
+            <div class="form_row reg_ddl__container"></div>
+            <button class="register_btn">Napravi račun</button>
+            <span id="register_error"></span>
+            <button class="login_btn">Imate račun?</button>
+          </form>
+        </div>
+      </div>
+      <div id="login_form" class="hidden">
+        <h2>Ulogujte se na svoj račun</h2>
+        <div class="form_container">
+          <form
+            action="#"
+            method="post"
+            name="log_form__name"
+            id="log_form__id"
+          >
+            <!-- Dinamičko prikazivanje iz JS -->
+            <div class="form_row reg_input__container"></div>
+            <div class="form_row reg_input__container"></div>
+            <button class="login_btn_acc">Uloguj se</button>
+            <span id="login_error"></span>
+            <button class="register_btn_acc">Napravi račun</button>
+          </form>
+        </div>
+      </div>
+      <div id="account_info" class="hidden">
+        <h3>Vaš račun</h3>
+        <div id="info">
+          <div id="operations_btns">
+            <!-- Dinamičko prikazivanje iz JS -->
+            <div class="operations_block transport"></div>
+            <div class="operations_block loan"></div>
+            <div class="operations_block close"></div>
+          </div>
+          <div id="transaction_info">
+            <h4>Tranzicije</h4>
+            <div id="transactions_display">
+              <!-- Dinamičko prikazivanje iz JS -->
+            </div>
+          </div>
+          <div id="account_stats">
+            <!-- Dinamičko prikazivanje iz JS -->
+          </div>
+        </div>
+        <button class="login_btn_acc-2">Uloguj se</button>
+        <button class="register_btn_acc-2">Napravi račun</button>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_links">
+        <a href="#section__1">Mogućnosti</a>
+        <a href="#section__2">Operacije</a>
+        <a href="#section__3">Utisci</a>
+        <a href="#section__4">Autor</a>
+      </div>
+      <p>Copyright &copy; 2022 Obrad Pualić-Radujko</p>
+      <div class="footer_links">
+        <a href="assets/xml/rss.xml">rss</a>
+        <a href="assets/xml/sitemap.xml">sitemap</a>
+        <a href="#">css</a>
+        <a href="#">dokumentacija</a>
+      </div>
+    </footer>
+    <!-- JavaScript & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+  </body>
+</html>
