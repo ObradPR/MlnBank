@@ -248,6 +248,7 @@ if (url == `https://obradpr.github.io/MlnBank/` || url == `https://obradpr.githu
   // Collapsing meni buttons
   const $collapsingBtn = $(`.collapsing_nav`);
   const $exitCollapsingBtn = $(`.exit_coll__nav`);
+  $collapsingBtn.css(`display`,`none`);
 
   // Functions
   const smoothScrolling = function () {
