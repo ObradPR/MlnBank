@@ -1121,6 +1121,8 @@ if (url == `https://obradpr.github.io/MlnBank/account.html`) {
         return;
       } else {
         $divLogin.addClass(`hidden`);
+        $userNameLogin.val(``);
+        $userPinLogin.val(``);
         $divAccountInfo.removeClass(`hidden`);
 
         // Account info
