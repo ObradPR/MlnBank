@@ -44,21 +44,21 @@ if (url == `https://obradpr.github.io/MlnBank/` || url == `https://obradpr.githu
         h5: `Elektronsko bankarstvo`,
         info: `Vaša Mln banka nudi mogućnost elektronskog bankarstva. Već danas možete otvoriti vaš račun od kuće i slati ili primati novac od prijatelja, ili podići kredit.`,
         img: `online_banking.jpg`,
-        imgAlt: `Online banking 100%`,
+        imgAlt: `Elektronsko bankarstvo`,
       },
       {
         icon: `fa-solid fa-arrow-up-right-dots`,
         h5: `Nadledajte vaš napredak`,
         info: `Prikaz transkacija, dobitaka ili gubitaka novca je olakšano. Pravite prave odluke u vezi sa novcem. Nadgledajte napredak Vašeg račuma.`,
         img: `money_grow.jpg`,
-        imgAlt: `Watch your money grow`,
+        imgAlt: `Životno naprednovanje`,
       },
       {
         icon: `fa-regular fa-id-card`,
         h5: `Besplatna kartica`,
         info: `Uz otvaranje računa u našoj banci dobijate besplatno debitnu dina karticu i visa karticu. Nakon toga internet postaje vaša prodavnica i kartica vaš novčanik.`,
         img: `free_debit_card.jpg`,
-        imgAlt: `Free debit card`,
+        imgAlt: `Besplatna debitna kartica`,
       },
     ];
 
