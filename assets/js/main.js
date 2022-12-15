@@ -1011,10 +1011,10 @@ if (url == `https://obradpr.github.io/MlnBank/account.html`) {
   function displayError($spanErrorTag) {
     $spanErrorTag.css(`display`, `block`);
     $spanErrorTag.css(`color`, `red`);
-    $spanErrorTag.html(`Molimo Vas ispravite greške`);
+    $spanErrorTag.html(`Molimo Vas ispravite greške ili popunite prazna polja`);
     setTimeout(function () {
       $spanErrorTag.css(`display`, `none`);
-    }, 3000);
+    }, 4000);
   }
 
   function createNewUser() {
@@ -1064,9 +1064,11 @@ if (url == `https://obradpr.github.io/MlnBank/account.html`) {
           !validateSelect() ||
           !validateGender()
         ) {
+          $divRegister.css(`border`, `solid 2px red`);
           displayError($registerError);
           return;
         } else {
+          $divRegister.css(`border`, `none`);
           userPin = Math.trunc(Math.random() * 9000) + 1000;
 
           $registerError.css(`display`, `block`);
@@ -1118,9 +1120,11 @@ if (url == `https://obradpr.github.io/MlnBank/account.html`) {
       e.preventDefault();
 
       if (!validateUserName || !validatePin) {
+        $divLogin.css(`border`, `solid red 2px`)
         displayError($loginError);
         return;
       } else {
+        $divLogin.css(`border`, `none`);
         $divLogin.addClass(`hidden`);
         $userNameLogin.val(``);
         $userPinLogin.val(``);
